@@ -2,18 +2,18 @@
 
 We have decided to utilise *pfsense* in the Athenars technology stack. The gateway / firewall / router sub-system is a critical piece of a holistic system so this was a really important decision. For abreviations sake in this article, we'll refer to this sub-system as our *edge* sub-system. To better understand how our decision fits into our overall design, please see our other posts on our [system requirements](https://athenars.io/defining-the-requirements-of-the-athenars-system/) and considered [sub-systems](https://athenars.io/the-athenars-sub-systems/).
 
-This will not be a blow-by-blow, feature comparison. We will however walk through and explain our reasoning for choosing pfsense over the other options. A lot of this won't be surprising when considering our system requirements provided in the previous posts.
+This will not be a blow-by-blow, feature comparison. We will however walk through and explain our reasoning for choosing pfsense over the other options. A lot of this won't be surprising when considering our system requirements provided in the previous posts. Importantly, we developed our requirements and needs first, then sat back and considered the options.
 
 # The options
 
-First, here are the main options that were considered.
+Here are the main options that were considered.
 
 - pfsense
 - OPNsense
-- Microtik
+- Microtik RouterOS
 - Unifi
-- Sophos
-- Untangle
+- Sophos Firewall Home Edition
+- Untangle / Arista NG Firewall Complete
 
 ## Main feature requirements
 
@@ -36,11 +36,13 @@ We have specific wants and needs for this sub-system. In the end, our decision t
 - the chosen features like IDS/IPS, proxies etc should all be known projects, not obsure, proprietary or otherwise unclear.
 - not essential, but nice to have, the platform should be able to be virtualised for added redundancy (the Athenars system will not include physically redundent edge hardware).
 
+What isn't considered critical in the Athenars system are more enterprise features like multi-site management. While redundancy in many parts of the Athenars system has been considered, we didn't consider WAN failover even though pfsense does have that option. This is one area where we drew the line between redunancy and added complexity and cost. Much of our functionality is from data held on our own site, so this mitigates the need to access the web and having WAN failover to a degree. The main concern is if we are away from our home location and want to be able to remote in via wireguard VPN when our WAN is down for some reason.
+
 ## Ticking boxes
 
 For our requirements, by far, the most suitable platform is pfsense. It basically ticks all the boxes.
 
-None of the other options are bad. They all have their strengths. Depending on your use cases and requirements, some of the other options may be best. But for the Athenars needs, pfsense is our clear choice.
+None of the other options are bad. They all have their strengths. Some might be particularly more attractive if you wanted to manage multiple sites. Depending on your use cases and requirements, some of the other options may be best. But for the Athenars needs, pfsense is our clear choice.
 
 If you'd like to see a somewhat detailed feature-by-feature break-down of the various options, you could have a look at a video from Tom at *Lawrence Systems* in the following video.
 
