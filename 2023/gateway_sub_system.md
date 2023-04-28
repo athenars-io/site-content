@@ -1,3 +1,5 @@
+This article about the [gateway sub-system](https://athenars.io/gateway-sub-system/) has been published.
+
 # Athenars gateway sub-system
 
 We have decided to utilise *pfsense* in the Athenars technology stack. The gateway / firewall / router sub-system is a critical piece of a holistic system so this was a really important decision. For abreviations sake in this article, we'll refer to this sub-system as our *edge* sub-system. To better understand how our decision fits into our overall design, please see our other posts on our [system requirements](https://athenars.io/defining-the-requirements-of-the-athenars-system/) and considered [sub-systems](https://athenars.io/the-athenars-sub-systems/).

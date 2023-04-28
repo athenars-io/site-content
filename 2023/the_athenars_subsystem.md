@@ -1,3 +1,5 @@
+This article about the [athenars sub-systems](https://athenars.io/the-athenars-sub-systems/) has been published.
+
 > We break down the Athenars system into its five key sub-systems. Our system design starts at the high level then gradually builds out based on our high level requirements.
 
 Before diving straight in to selecting specific components of the Athenars stack, we should consider higher level sub-systems aligned with our system requirements first. See the previous post for details of our overall system requirements.

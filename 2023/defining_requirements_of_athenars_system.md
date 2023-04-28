@@ -1,3 +1,5 @@
+This article that [defined the requirements of the whole Athenars system](https://athenars.io/defining-the-requirements-of-the-athenars-system/) has been published.
+
 > It's important to think about your entire system and spend time planning and designing before building. Learn about the underlying requirements behind the Athenars system design.
 
 Firstly, what is an Athenars system? It's a comprehensive cohesive system that integrates modern cloud technologies and building automation in a data driven way, all locally on premises. We want this system to be well designed, considered and as thoughtful as possible.
